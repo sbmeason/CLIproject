@@ -9,7 +9,19 @@ class CLIproject::CLI
     puts "Hello there!"
     puts "GETTING DATA FROM API...PLEASE WAIT"
     puts "CREATING NEW OBJS"
+    display_info
   end
+  
+  def display_info
+    puts "please make selection:"
+    input = gets.strip.downcase
+    
+    if input == "actors"
+      puts "ACTORS LIST"
+      puts "LIST OF ACTORS/OBJS"
+    else 
+      puts "Try again"
+  end 
   
  
  #deal with inputs (loop to keep asking to get new info)
